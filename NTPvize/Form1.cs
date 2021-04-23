@@ -77,6 +77,23 @@ namespace NTPvize
                     {
                         pictureBox1.Image = Image.FromFile(Application.StartupPath + "/rain.png");
                     }
+                    int sicaklik = int.Parse(textBox2.Text);
+                    if (sicaklik <= 15)
+                    {
+                        textBox2.BackColor = Color.Blue;
+                    }
+                    else if (sicaklik >= 20 && sicaklik<27)
+                    {
+                        textBox2.BackColor = Color.Yellow;
+                    }
+                    else if (sicaklik >= 27)
+                    {
+                        textBox2.BackColor = Color.Red;
+                    }
+                    else if (sicaklik >= 16 && sicaklik < 20)
+                    {
+                        textBox2.BackColor = Color.White;
+                    }
                 }
             }
         }
