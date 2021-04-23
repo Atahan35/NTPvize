@@ -17,6 +17,8 @@ namespace NTPvize
             InitializeComponent();
         }
 
+        string xml_veri_linki = "https://www.mgm.gov.tr/FTPDATA/analiz/sonSOA.xml";
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
