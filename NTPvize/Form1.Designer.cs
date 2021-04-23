@@ -42,7 +42,7 @@ namespace NTPvize
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(13, 13);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(473, 24);
+            this.comboBox1.Size = new System.Drawing.Size(685, 24);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -51,7 +51,7 @@ namespace NTPvize
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(13, 60);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(473, 24);
+            this.comboBox2.Size = new System.Drawing.Size(685, 24);
             this.comboBox2.TabIndex = 1;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -59,20 +59,20 @@ namespace NTPvize
             // 
             this.textBox1.Location = new System.Drawing.Point(13, 111);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(473, 22);
+            this.textBox1.Size = new System.Drawing.Size(685, 22);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(13, 159);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(473, 22);
+            this.textBox2.Size = new System.Drawing.Size(685, 22);
             this.textBox2.TabIndex = 3;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::NTPvize.Properties.Resources.clouds;
-            this.pictureBox1.Location = new System.Drawing.Point(492, 14);
+            this.pictureBox1.Location = new System.Drawing.Point(704, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(192, 168);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -83,7 +83,7 @@ namespace NTPvize
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 194);
+            this.ClientSize = new System.Drawing.Size(908, 194);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
