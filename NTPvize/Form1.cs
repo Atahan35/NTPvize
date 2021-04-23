@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace NTPvize
 {
@@ -19,9 +20,16 @@ namespace NTPvize
 
         string xml_veri_linki = "https://www.mgm.gov.tr/FTPDATA/analiz/sonSOA.xml";
 
+        string secilenBolge;
+        string secilenIl;
+        XmlNodeList nodes;
+
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            XmlDocument Belge1 = new XmlDocument();
+            Belge1.Load(xml_veri_linki);
+            XmlElement root = Belge1.DocumentElement;
+            nodes = root.SelectNodes("sehirler");
         }
     }
 }
