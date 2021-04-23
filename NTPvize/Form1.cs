@@ -51,5 +51,18 @@ namespace NTPvize
                 }
             }
         }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            secilenIl = comboBox2.Text;
+            foreach (XmlNode item in nodes)
+            {
+                if (item.SelectSingleNode("ili").InnerText==secilenIl)
+                {
+                    textBox1.Text = item.SelectSingleNode("Durum").InnerText;
+                    textBox2.Text = item.SelectSingleNode("Mak").InnerText;
+                }
+            }
+        }
     }
 }
