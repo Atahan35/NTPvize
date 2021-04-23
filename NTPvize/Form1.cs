@@ -61,6 +61,22 @@ namespace NTPvize
                 {
                     textBox1.Text = item.SelectSingleNode("Durum").InnerText;
                     textBox2.Text = item.SelectSingleNode("Mak").InnerText;
+                    if (textBox1.Text.Contains("Parçalı"))
+                    {
+                        pictureBox1.Image = Image.FromFile(Application.StartupPath + "/clouds.png");
+                    }
+                    else if (textBox1.Text.Contains("Az"))
+                    {
+                        pictureBox1.Image = Image.FromFile(Application.StartupPath + "/cloudy.png");
+                    }
+                    else if (textBox1.Text.Contains("Açık"))
+                    {
+                        pictureBox1.Image = Image.FromFile(Application.StartupPath + "/sun.png");
+                    }
+                    else if (textBox1.Text.Contains("Yağmur"))
+                    {
+                        pictureBox1.Image = Image.FromFile(Application.StartupPath + "/rain.png");
+                    }
                 }
             }
         }
