@@ -30,6 +30,13 @@ namespace NTPvize
             Belge1.Load(xml_veri_linki);
             XmlElement root = Belge1.DocumentElement;
             nodes = root.SelectNodes("sehirler");
+            foreach (XmlNode item in nodes)
+            {
+                if (!comboBox1.Items.Contains(item.SelectSingleNode("Bolge").InnerText))
+                {
+                    comboBox1.Items.Add(item.SelectSingleNode("Bolge").InnerText);
+                }
+            }
         }
     }
 }
