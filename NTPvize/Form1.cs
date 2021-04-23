@@ -38,5 +38,18 @@ namespace NTPvize
                 }
             }
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            secilenBolge = comboBox1.SelectedItem.ToString();
+            comboBox2.Items.Clear();
+            foreach (XmlNode item in nodes)
+            {
+                if (item.SelectSingleNode("Bolge").InnerText==secilenBolge)
+                {
+                    comboBox2.Items.Add(item.SelectSingleNode("ili").InnerText);
+                }
+            }
+        }
     }
 }
